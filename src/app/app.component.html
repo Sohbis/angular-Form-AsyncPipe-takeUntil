@@ -1,0 +1,19 @@
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+  <div>
+    <label for="name">Name:</label>
+    <input formControlName="name" type="text" />
+  </div>
+  <div>
+    <label for="gender">Gender:</label>
+    <input formControlName="gender" type="text" />
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input formControlName="age" type="text" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+<hello [formData]="formData"></hello>
+<app-world></app-world>
+<!-- <app-world1></app-world1> -->

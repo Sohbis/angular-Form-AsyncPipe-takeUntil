@@ -1,0 +1,7 @@
+<p>World Component</p>
+
+<div *ngIf="formData | async as f">
+  <ng-container *ngIf="f.age < 18">
+    name: {{ f.name }} gender: {{ f.gender }} age: {{ f.age }}
+  </ng-container>
+</div>
